@@ -1,9 +1,9 @@
 const cacheName = "shellshellwt-Fluttering Heart-1.0";
 const contentToCache = [
     "Build/Fluttering Heart.loader.js",
-    "Build/Fluttering Heart.framework.js.unityweb",
-    "Build/Fluttering Heart.data.unityweb",
-    "Build/Fluttering Heart.wasm.unityweb",
+    "Build/Fluttering Heart.framework.js",
+    "Build/Fluttering Heart.data",
+    "Build/Fluttering Heart.wasm",
     "TemplateData/style.css"
 
 ];
