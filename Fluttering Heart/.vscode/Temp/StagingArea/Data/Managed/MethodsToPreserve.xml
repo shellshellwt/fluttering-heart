@@ -1,0 +1,29 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="Bounce">
+			<method name="NextScene"/>
+		</type>
+		<type fullname="CreditsScript">
+			<method name="Back"/>
+			<method name="CreditsAppear"/>
+		</type>
+		<type fullname="PressButton">
+			<method name="Click0"/>
+			<method name="Click1"/>
+			<method name="Click2"/>
+			<method name="Click3"/>
+			<method name="Click4"/>
+			<method name="Click5"/>
+			<method name="Click6"/>
+			<method name="Click7"/>
+			<method name="Click8"/>
+			<method name="Click9"/>
+			<method name="Continue"/>
+		</type>
+		<type fullname="Scenes">
+			<method name="ChangeScene"/>
+			<method name="ChangeScene"/>
+			<method name="ChangeScene2"/>
+		</type>
+	</assembly>
+</linker>
