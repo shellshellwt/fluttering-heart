@@ -57,7 +57,7 @@ public class PressButton : MonoBehaviour
                 buttons[storage[j]].GetComponent<Image>().sprite = original;
                 yield return _waitForSeconds0_2;
             }
-
+            int roundCorrect = 0;
             for (int k = 0; k <= counter; k++)
             {
                 // Player presses the buttons
@@ -68,9 +68,14 @@ public class PressButton : MonoBehaviour
                 if (guess == storage[k]) // Checks if they are correct
                 {
                     correct++;
+                    roundCorrect++;
                 }
                 guess = -1;
                 pressed = false;
+            }
+            if (roundCorrect != i+1)
+            {
+                break;
             }
             counter++;
         }
@@ -82,19 +87,9 @@ public class PressButton : MonoBehaviour
             complete = true;
             resultText.text = "- continue -";
         }
-        else if (correct >= 12)
-        {
-            scoreBoard.text = "You got a few of them wrong.";
-            resultText.text = "- restart -";
-        }
-        else if (correct >= 6)
+        else
         {
             scoreBoard.text = "You got some of them wrong.";
-            resultText.text = "- restart -";
-        }
-        else if (correct <= 5)
-        {
-            scoreBoard.text = "You got most of them wrong.";
             resultText.text = "- restart -";
         }
         panel.SetActive(true);
