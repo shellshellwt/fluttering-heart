@@ -9,7 +9,7 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 *.log
-
+Fluttering Heart/Library/PackageCache/com.unity.burst@1.8.9/.Runtime/libburst-llvm-15.dylib
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
 *.blend1
 *.blend1.meta
